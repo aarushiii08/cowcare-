@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Care Calculator</title>
+    <link rel="stylesheet" href="stylecal.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Cow Care Calculator</h1>
+        
+        <form id="cowCareForm">
+            <label for="numCows">Number of Cows:</label>
+            <input type="number" id="numCows" name="numCows" required>
+
+            <label for="breedType">Type of Breed:</label>
+            <select id="breedType" name="breedType">
+                <option value="Red Sindhi">Red Sindhi</option>
+                <option value="Gir">Gir</option>
+                <option value="Hariana">Hariana</option>
+                <option value="Sahiwal">Sahiwal</option>
+                <option value="Ongole">Ongole</option>
+                <option value="Deoni">Deoni</option>
+                <option value="Tharparkar">Tharparkar</option>
+                <option value="Kankrej">Kankrej</option>
+                <option value="krishnavalley">Krishna valley</option>
+            </select>
+
+            <button type="button" onclick="calculateCosts()">Calculate Costs</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="scriptcal.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
